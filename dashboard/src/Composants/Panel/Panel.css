@@ -9,6 +9,7 @@
     position: relative;
     z-index: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #ECECF1;
     border-radius: 8px;
@@ -29,7 +30,9 @@
     display: flex;
     flex-direction: column;
     margin: 12px 24px 12px 12px;
+    /*
     width: 100%;
+    */
     background-color: white;
     border-radius: 8px;
 }
@@ -51,7 +54,7 @@
 .circle-avatar {
     height: 60px;
     width: 60px;
-    background-color: lightcoral;
+    background-color: #6757EF;
     border-radius: 50%;
 }
 
@@ -122,4 +125,34 @@
     color: #6757EF;
     font-size: 12px;
     margin-bottom: 10px;
+}
+
+.links-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.link-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #ECECF1;
+    margin: 0 24px 12px 12px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #8786A3;
+    font-weight: bolder;
+    width: -webkit-fill-available;
+    cursor: pointer;
+}
+.links-btn a {
+    display: flex;
+    align-items: center;
+}
+
+.link-btn a svg {
+    color: #8786A3;
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 18px;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Panel.css';
-import { MdMailOutline, MdPhone, MdLocationOn, MdStar, MdGroup, MdCardMembership } from "react-icons/md";
+import { MdMailOutline, MdPhone, MdLocationOn, MdStar, MdGroup, MdCardMembership, MdDomain, MdEqualizer, MdFolderShared, MdBusinessCenter } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 
 const Panel = (props) => {
@@ -29,6 +29,12 @@ const Panel = (props) => {
                         <div className="progress-bar"><progress min="0" max="100" value="76"></progress></div>
                         <div className="progress-info">Profil complété : 76%</div>
                     </div>
+                </div>
+                <div className="links-btn">
+                    <div className="link-btn" style={{ backgroundColor: "#6757EF", color: "white" }}><a><MdEqualizer style={{ color: "white" }}/>Tableau de bord</a></div>
+                    <div className="link-btn"><a><MdBusinessCenter />Portefeuille</a></div>
+                    <div className="link-btn"><a><MdDomain />Mon entreprise</a></div>
+                    <div className="link-btn"><a><MdFolderShared />Projets associés</a></div>
                 </div>
                 <div className="bg-fake"></div>
             </div>
