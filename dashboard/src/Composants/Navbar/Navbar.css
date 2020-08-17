@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 54px;
+    background-color: #2A374E;
+}
+
+.icons {
+    color: white;
+    padding: 10px 8px;
+    font-size: 30px;
+    cursor: pointer;
+}
