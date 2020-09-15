@@ -4,13 +4,14 @@ import { MdMailOutline, MdPhone, MdLocationOn, MdStar, MdGroup, MdCardMembership
 import { FaEdit } from "react-icons/fa";
 
 const Panel = (props) => {
+    console.log(props);
     return (
         <div className="container">
             <div className="panel">
                 <div className="card">
                     <div className="icon-edit"><FaEdit  /></div>
                     <div className="avatar">
-                        <div className="circle-avatar"></div>
+                        <div className="circle-avatar" style={{ backgroundImage: `url(${props})` }}></div>
                         <div>Jonathan</div>
                         <div>de BOISVILLIERS</div>
                     </div>

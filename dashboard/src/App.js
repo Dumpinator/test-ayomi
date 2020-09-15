@@ -5,6 +5,11 @@ import Navbar from './Composants/Navbar/Navbar';
 import Panel from './Composants/Panel/Panel';
 
 function App() {
+  const [profil, setProfil] = useState([
+    {
+      image: "images/avatar.jpg"
+    }
+  ])
 
   const [projects, setProjects] = useState([
     {
@@ -18,7 +23,7 @@ function App() {
       comment: 3,
       bookmark: false,
       trailer: "https://www.youtube.com/watch?v=bVH7LurFHHc",
-      image: "images/the-king.jpg"
+      image: "images/avatar.jpg"
     },
     {
       id: 2,
@@ -38,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Panel />
+      <Panel data={profil}/>
     </div>
   );
 }
